@@ -2,12 +2,12 @@
 ## Overview of the Project
   * The purpose of the analysis was to explore the Earth surface temperature data from 1900 to 2013 to see the trend of 
     of United States temperature,and to used the dataset to build a machine learning model to predict future temperatures in the 
-    the Uited States
+    the United States.
     
 ### Reasons for Selecting Topic
   * To see if the data surport the general consencus of global warming.
   * To see the temperature trend across the United States.
-  * To add to the body of proof and evidence of global warming useing the United States Data
+  * To add to the body of proof and evidence of global warming useing the United States temperature Data
 
 ### Data Source Description
     We used the data from a newer compilation put together by the Berkeley Earth, which is affiliated with Lawrence Berkeley
@@ -16,6 +16,6 @@
     They publish the source data and the code for the transformations they applied.
 
 #### Questions we wish to answer
-   * What is the trend of  average land temperature in United States
-   * Is there any evidence of increase land temperature from United States Dataset
-   * What is acuracy and precision of the model
+   * What is the trends of  average land temperature in United States
+   * Is there any evidence of increase land temperature(global warming) from United States Dataset
+   * What is accuracy and precision of the model

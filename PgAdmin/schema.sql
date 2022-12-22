@@ -31,15 +31,10 @@ SELECT * FROM cleanus_temp;
 joining tables 
 select 
     cl."Date",
-	cl."LandAvg_temp",
-	cl."LandAvg_temp_Uncer",
-	cl."LandMax_temp",
-	cl."LandMax_tempUncer",
-	cl."LandMin_temp",
-	cl."LandMin_tempUncer",
-    c."City",
+	cl."LandOceanAvg_temp",
+    c."State",
 	c."Country"
 INTO "join_df"
-from city_temp c
+from cleanUS c
 join "cleanWorld_temp" cl
 using ("Date");

@@ -1,11 +1,11 @@
--- Creating tables for cleanworld_temp
-CREATE TABLE cleanUS_temp (
-     dt date NOT NULL,
+-- Creating tables for cleanglobe_temp
+CREATE TABLE cleanglobe_temp (
+     Date  NOT NULL,
      Avg_temp  varchar,
      Avg_temp_unc varchar,
-     state varchar NULL,
+     State varchar NULL,
      Country varchar NULL,
-     PRIMARY KEY (dt)
+     PRIMARY KEY (Date)
 );
 
 
@@ -22,19 +22,21 @@ CREATE TABLE cleanWorld_temp (
      LandMin_tempUncer varchar NOT NULL,
      LandOceanAvg_temp varchar NOT NULL,
      LandOceanAvg_tempUncer varchar NOT NULL,
-	FOREIGN KEY (dt) REFERENCES cleanUS_temp (dt),
-	PRIMARY KEY (dt)
+	FOREIGN KEY (Date) REFERENCES cleanglobe_temp (Date),
+	PRIMARY KEY (Date)
 );
 
-SELECT * FROM cleanus_temp;
+SELECT * FROM cleanglobe_temp;
+SELECT * FROM cleanWorld_temp;
 
-joining tables 
+--joining tables 
 select 
     cl."Date",
 	cl."LandOceanAvg_temp",
+	cl."LandAvg_temp",
     c."State",
 	c."Country"
 INTO "join_df"
-from cleanUS c
+from cleanglobal_temp c
 join "cleanWorld_temp" cl
 using ("Date");

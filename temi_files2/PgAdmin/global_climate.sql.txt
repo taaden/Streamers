@@ -1,0 +1,6 @@
+SELECT ct."Year",ct.avg_temp,ct.avg_temp_uncer,
+co."China",co."United States",co."India",
+co."Indonesia",co."Japan",co."Russia",co."Brazil",co."Germany",co."Iran",co."Canada"
+INTO global_climate
+FROM climate_temp AS ct
+LEFT JOIN coemissions As co ON co."Year" = ct."Year";

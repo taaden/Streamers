@@ -23,3 +23,14 @@
    * To confirm evidence of increase land temperature(global warming) from  Dataset
    * To determine most appropriate machine learning model for the datasets
    * What is accuracy and precision of the model
+
+## Database 
+We were able to work on the data that we got from Kaggle. An SQL relational database creates tables and links by using primary keys. Postgres suited the project best because the data we got had a lot of datasets. To load the data into the tables, we used a Python package, sqlalchemy, and modules such as crate engine from the created database, "climate_change_db."
+When we used "Group By," the orders were not in order, so we used "Order By" to ascend the year from 1900 to 2013. 
+Also:
+   * Data Structure 
+   * Easy access to the network
+   * Language (SQL)
+Please vist the entity relationship diagram for details about table structure. 
+Datasource Link
+

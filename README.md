@@ -41,9 +41,9 @@
  ![image](https://user-images.githubusercontent.com/64270455/211419498-5d13ea77-02ff-429e-8c19-6d97b39a6228.png)
 
  
-  ##### Dashboard
-    The emissions.csv and GlobalLandTemperaturesByState.csv was loaded into Tableau Public for visualizations
+##### Dashboard
+  The emissions.csv and GlobalLandTemperaturesByState.csv was loaded into Tableau Public for visualizations
      
-   https://public.tableau.com/views/NetflixBestMovies/ClimateChangestory?:language=en-US&:display_count=n&:origin=viz_share_link
+ https://public.tableau.com/views/NetflixBestMovies/ClimateChangestory?:language=en-US&:display_count=n&:origin=viz_share_link
      
 

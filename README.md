@@ -1,11 +1,12 @@
 # Climate Change (Group Project)
-## Overview of the Project
+
+# Overview of the Project
   * The purpose of the analysis was to explore the Earth surface temperature data from 1900 to 2013 to see the trends of 
     of world temperature.
   * To explore the Carbondioxide(CO2) emissions data from 1990-2018 to see the trends of world CO2 emissions
   * And to use the dataset to build machine learning model to predict future temperatures of the world.
     
-### Reasons for Selecting Topic
+## Reasons for Selecting Topic
   * To see if the data support the general consensus of global warming.
   * To see the temperature trends across the major industrial country of the world.
   * To add to the body of proof and evidence of global warming using the global temperature data and Co2 emision data
@@ -26,7 +27,7 @@
    * To determine most appropriate machine learning model for the datasets
    * What is accuracy and precision of the model?
 
-#### Database 
+##### Database 
   The world avg temperature data from Berkeley Earth and the Co2 emissions data from CAIT data source were cleaned 
   in jupyter notebook and were loaded directly into the PostgreSQL using a Python Package called Sqlalchemy.
   PostgreSQL was chosen because of the size of our dataset (68,504).
@@ -45,5 +46,13 @@
  The emissions.csv and GlobalLandTemperaturesByState.csv was loaded into Tableau Public for visualizations
      
  https://public.tableau.com/views/NetflixBestMovies/ClimateChangestory?:language=en-US&:display_count=n&:origin=viz_share_link
-     
+
+###### Communication Protocol:
+  * Slack shall be our main means of communication
+  * We shall all try to review all work done on the project daily and comment, approve,or suggest improvement even if when we 
+    have no delivarable to submit
+  * When we have need to meet on Zoom, it shall be communicated via slack with the link
+  * If any of one of us has any need  concerning the project, he or she should reachout through Slack     
+
+
 

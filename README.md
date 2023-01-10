@@ -27,7 +27,7 @@
    * To determine most appropriate machine learning model for the datasets
    * What is accuracy and precision of the model?
 
-##### Database 
+#####Database 
   The world avg temperature data from Berkeley Earth and the Co2 emissions data from CAIT data source were cleaned 
   in jupyter notebook and were loaded directly into the PostgreSQL using a Python Package called Sqlalchemy.
   PostgreSQL was chosen because of the size of our dataset (68,504).
@@ -43,11 +43,50 @@
 
  
 ##### Dashboard
- The emissions.csv and GlobalLandTemperaturesByState.csv was loaded into Tableau Public for visualizations
+ The emissions.csv and GlobalLandTemperaturesByState.csv was loaded into Tableau Public for visualizations, 
+ the visualizations were made in a Climate change story:
      
  https://public.tableau.com/views/NetflixBestMovies/ClimateChangestory?:language=en-US&:display_count=n&:origin=viz_share_link
-
-###### Communication Protocol:
+ 
+ 
+###### Machine Learning
+   The machine learning models used to predict the variability of future average temperature from the mean average temperature were;
+   the Random Forest Model and the Decision Tree Model.Both models are example of Supervised learning which follows
+   the basic pattern for supervised learning used in linear regression example:
+     * Split the data into input (X) and output (y).
+     * Create an instance of the model with model = LinearRegression().
+     * Train the model with the dataset with model.fit(X,y).
+     * Create predictions with y_pred = model.predict(X).
+   
+ * Preprocessing
+   * These two models required endoding labels either by with Pandas or Scikit-learn's LabelEncoder module
+     which first used to first train the label encoder, then convert the text data into numerical data.
+   * These two models also required data scaling and normalization,Scikit-learn's StandardScaler module is used to scale data.
+   The model -> fit -> predict/transform workflow is also used when scaling data. The standard scaler standardizes the data,
+   which means that each feature would be rescaled so that its mean is 0 and its standard deviation is 1.
+   
+* Split the Data into Training and Testing Sets
+   To train and validate our model, we had to split the features and target sets into training and testing sets.
+   This  help determined the relationships between each feature in the features training set and the target training set,
+   which was later used to determine the validity of our model using the features and target testing sets.
+   
+* Fit the Decision Tree Model
+   After scaling the features data, the decision tree model can be created and trained. First,the decision tree classifier 
+   instance is created and then we train or fit the "model" with the scaled training data.
+   
+* Make Predictions Using the Testing Data
+   
+* Evaluate the Model
+  This done by  Calculating the confusion matrix
+   
+ Random Forest model is different from Decison Tree model and have its benefits which includes:
+   * Are robust against overfitting as all of those weak learners are trained on different pieces of the data.
+   * Can be used to rank the importance of input variables in a natural way.
+   * Can handle thousands of input variables without variable deletion.
+   * Are robust to outliers and nonlinear data.
+   * Run efficiently on large datasets.
+   
+ ###### Communication Protocol:
   * Slack shall be our main means of communication
   * We shall all try to review all work done on the project daily and comment, approve,or suggest improvement even if when we 
     have no delivarable to submit

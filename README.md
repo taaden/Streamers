@@ -42,7 +42,7 @@
 
  
 ##### Dashboard
-  The emissions.csv and GlobalLandTemperaturesByState.csv was loaded into Tableau Public for visualizations
+ The emissions.csv and GlobalLandTemperaturesByState.csv was loaded into Tableau Public for visualizations
      
  https://public.tableau.com/views/NetflixBestMovies/ClimateChangestory?:language=en-US&:display_count=n&:origin=viz_share_link
      

@@ -27,7 +27,7 @@
    * To determine most appropriate machine learning model for the datasets
    * What is accuracy and precision of the model?
 
-#####Database 
+#### Database 
   The world avg temperature data from Berkeley Earth and the Co2 emissions data from CAIT data source were cleaned 
   in jupyter notebook and were loaded directly into the PostgreSQL using a Python Package called Sqlalchemy.
   PostgreSQL was chosen because of the size of our dataset (68,504).

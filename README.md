@@ -1,13 +1,13 @@
 # Climate Change (Group Project)
 
 # Overview of the Project
-  * The purpose of the analysis was to explore the Earth surface temperature data from 1900 to 2013 to see the trends of 
-    of world temperature.
-  * To explore the Carbondioxide(CO2) emissions data from 1990-2018 to see the trends of world CO2 emissions
-  * And to use the dataset to build machine learning model to predict future temperatures of the world.
+  * The purpose of the analysis was to explore the Earth surface temperature data from 1900 to 2013 to see the trends  
+    of the world temperature.
+  * To explore the Carbondioxide(CO2) emissions data from 1990-2018 to see the trends of the world CO2 emissions
+  * And to use the dataset to build machine learning model to predict the variation of the world`s future temperatures.
     
 ## Reasons for Selecting Topic
-  * To see if the data support the general consensus of global warming.
+  * To see if the data analysis support the general consensus of global warming.
   * To see the temperature trends across the major industrial country of the world.
   * To add to the body of proof and evidence of global warming using the global temperature data and Co2 emision data
   * To help focus the world on major contributor CO2 emissions

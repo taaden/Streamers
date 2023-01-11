@@ -36,10 +36,22 @@
   The "Climate_temp" was created by aggregating the Avg Temp and find the mean value, then Group by "Year" and Order by "Year" ASC.
  
  ![image](https://user-images.githubusercontent.com/64270455/211418016-7df96bea-0c8e-4703-870a-e6b5bd98d6b5.png)
+ 
+ "Climate_temp"table
+ 
+ ![image](https://user-images.githubusercontent.com/64270455/211695266-7ac07096-1b85-4a20-a422-b969c0651d68.png)
+
 
   The "global_climate" table was created by left joining the "climate_temp"table on "Coemissions" table using the code below
  
  ![image](https://user-images.githubusercontent.com/64270455/211419498-5d13ea77-02ff-429e-8c19-6d97b39a6228.png)
+ 
+ "global_climate" table
+ 
+ ![image](https://user-images.githubusercontent.com/64270455/211695495-b753e729-6594-4b89-bd8c-8271cc2ad3de.png)
+
+ 
+ 
 
  
 ##### Dashboard
@@ -50,17 +62,17 @@
  
  
 ###### Machine Learning
-   The machine learning models used to predict the variability of future average temperature from the mean average temperature were;
-   the Random Forest Model and the Decision Tree Model.Both models are example of Supervised learning which follows
-   the basic pattern for supervised learning used in linear regression example:
-     * Split the data into input (X) and output (y).
-     * Create an instance of the model with model = LinearRegression().
-     * Train the model with the dataset with model.fit(X,y).
-     * Create predictions with y_pred = model.predict(X).
+   The machine learning models used to predict the variability of future average temperature from the mean of average temperatures were;
+   the Random Forest and the Decision Tree Models. Both models are example of Supervised learning, they follow
+   the basic pattern for supervised learning used in linear regression, for example:
+     1) Split the data into input (X) and output (y).
+     2) Create an instance of the model with model = LinearRegression().
+     3) Train the model with the dataset with model.fit(X,y).
+     4) Create predictions with y_pred = model.predict(X).
    
- * Preprocessing
-   * These two models required endoding labels either by with Pandas or Scikit-learn's LabelEncoder module
-     which first used to first train the label encoder, then convert the text data into numerical data.
+* Preprocessing
+   * These two models required endoding labels either by  Pandas or with Scikit-learn's LabelEncoder module,
+     which when used  first train the label encoder, then convert the text data into numerical data.
    * These two models also required data scaling and normalization,Scikit-learn's StandardScaler module is used to scale data.
    The model -> fit -> predict/transform workflow is also used when scaling data. The standard scaler standardizes the data,
    which means that each feature would be rescaled so that its mean is 0 and its standard deviation is 1.
